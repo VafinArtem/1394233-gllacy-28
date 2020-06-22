@@ -48,7 +48,7 @@
       <h2 class="visually-hidden">Личный кабинет</h2>
       <a href="#" class="search">Поиск</a>
       <a href="#" class="login">Вход</a>
-      <a href="#" class="cart" title="Корзина">Пусто</a>
+      <a href="#" class="cart" title="Корзина">2 товара</a>
     </section>
     <section class="header-opening-hours">
       <h2 class="visually-hidden">Часы работы и наш телефон</h2>
@@ -56,9 +56,70 @@
       <a href="tel:88124502525" class="header-tel">8 812 450-25-25</a>
     </section>
   </header>
-  <main>
 
+  <main>
+    <section class="catalog">
+      <ul class="breadcrumbs-list">
+        <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="index.html">Главная</a></li>
+        <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="#">Каталог</a></li>
+        <li class="breadcrumbs-item"><a class="breadcrumbs-link">Сливочное</a></li>
+      </ul>
+      <h2 class="catalog-title">Сливочное мороженое</h2>
+      <form action="https://echo.htmlacademy.ru/" method="GET" class="filter-form">
+        <fieldset class="catalog-sorting">
+          <legend class="catalog-sorting-title">Сортировка</legend>
+          <select class="catalog-sorting" name="catalog-sorting" id="catalog-sorting">
+          <option value="popular">по популярности</option>
+          <option value="low-cost-up">сначала недорогие</option>
+          <option value="low-cost-down">сначала дорогие</option>
+          <option value="fat">по жирности</option>
+        </select>
+        </fieldset>
+        <fieldset class="catalog-cost">
+          <legend class="catalog-cost-title">Цена: 100 ₽ – 500 ₽</legend>
+        </fieldset>
+        <fieldset class="catalog-fat">
+          <legend class="catalog-fat-title">Жирность:</legend>
+          <ul class="catalog-fat-list">
+            <li class="catalog-fat-item">
+              <input type="radio" name="0" id="0"> 0%
+            </li>
+            <li class="catalog-fat-item">
+              <input type="radio" name="up-10" id="up-10"> до 10%
+            </li>
+            <li class="catalog-fat-item">
+              <input type="radio" name="up-30" id="up-30"> до 30%
+            </li>
+            <li class="catalog-fat-item">
+              <input type="radio" name="above-30" id="above-30"> выше 30%
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="catalog-fillers">
+          <legend class="catalog-fillers-title">Наполнители:</legend>
+          <ul class="catalog-fillers-list">
+            <li class="catalog-fillers-item">
+              <input type="checkbox" name="chocolate" id="chocolate"> шоколадные
+            </li>
+            <li class="catalog-fillers-item">
+              <input type="checkbox" name="sugar" id="sugar"> сахарные присыпки
+            </li>
+            <li class="catalog-fillers-item">
+              <input type="checkbox" name="fruit" id="fruit"> фрукты
+            </li>
+            <li class="catalog-fillers-item">
+              <input type="checkbox" name="syrup" id="syrup"> сиропы
+            </li>
+            <li class="catalog-fillers-item">
+              <input type="checkbox" name="jam" id="jam"> джемы
+            </li>
+          </ul>
+        </fieldset>
+        <button class="catalog-filter-btn" type="submit">Применить</button>
+      </form>
+    </section>
   </main>
+
   <footer>
     <section class="social-links">
       <h2 class="visually-hidden">Наши социальные сети</h2>
