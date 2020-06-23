@@ -10,15 +10,21 @@
     --basic-gray-lightest: #EDEDED;
     --basic-gray-extra-lightest: #F8F7F4;
     --basic-white: #FFFFFF;
-    --special-orange: rgba(242, 104, 64, 1);
-    --special-red: rgba(231, 74, 53, 1);
+    --special-orange: #F26843;
+    --special-red: #E74A35;
     --special-red-dark: #E84D37;
+    --special-red-light: #d84732;
+    --special-red-lightest: #e1613e;
+    --special-red-opacity: rgba(160, 32, 11, 0.76);
+    --special-red-dark-opacity: rgba(172, 16, 0, 0.64);
     --special-brown: #D07058;
     --special-green: #849D8F;
     --special-gray: #8996A6;
     --special-brown-dark: #9D8B84;
     --special-white-opacity: rgba(255, 255, 255, 0.2);
     --special-white-spec-opacity: rgba(255, 255, 255, 0);
+    --special-pink: #f58669;
+    --special-pink-dark: #ec6f5e;
 }
 
 
@@ -152,6 +158,33 @@ a {
     display: none;
 }
 
+.button {
+    display: inline-block;
+    text-decoration: none;
+    text-shadow: 0 2px 5px var(--special-red-opacity);
+    background: var(--special-orange);
+    background: linear-gradient(to bottom, var(--special-orange), var(--special-red));
+    border-radius: 50px;
+    box-shadow: 0px 2px 2px var(--special-red-dark-opacity);
+    border: none;
+    cursor: pointer;
+    color: var(--basic-white);
+    text-align: center;
+    vertical-align: top;
+}
+
+.button:hover,
+.button:focus {
+    background: linear-gradient(to bottom, var(--special-pink), var(--special-pink-dark));
+    box-shadow: 0px 2px 2px var(--special-red-dark-opacity);
+    outline: none;
+}
+
+.button:active {
+    background: linear-gradient(to bottom, var(--special-red-light), var(--special-red-lightest));
+    box-shadow: 0px 2px 2px var(--special-red-dark-opacity);
+}
+
 
 /* Header -- Personel Menu */
 
@@ -241,4 +274,44 @@ a {
     font-size: 22px;
     line-height: 24px;
     color: var(--basic-white);
+}
+
+
+/* Header -- Slider */
+
+.header-slider {
+    margin-top: 275px;
+}
+
+.slider-list {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.slider-item {
+    display: none;
+}
+
+.slider-active {
+    display: block;
+}
+
+.slider-title {
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 60px;
+    width: 672px;
+    margin: 0 auto;
+    margin-bottom: 27px;
+}
+
+.slider-btn {
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 44px;
+    padding: 10px 40px;
 }
