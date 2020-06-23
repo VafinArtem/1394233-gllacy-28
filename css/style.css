@@ -45,8 +45,6 @@ body {
     margin: 0;
     min-width: 1200px;
     font-family: "Roboto", "Tahoma", sans-serif;
-    font-size: 16px;
-    line-height: 18px;
     color: var(--basic-white);
 }
 
@@ -357,7 +355,6 @@ a {
 
 .promo-item {
     min-height: 229px;
-    background-color: var(--special-red);
     border-radius: 16px;
     display: flex;
     flex-direction: column;
@@ -370,11 +367,13 @@ a {
 
 .crimson {
     background-image: url(../img/bg-crimson.jpg);
+    background-color: var(--special-red);
     background-repeat: no-repeat;
 }
 
 .chocolate {
     background-image: url(../img/bg-chocolate.jpg);
+    background-color: var(--special-brown);
     background-repeat: no-repeat;
 }
 
@@ -398,4 +397,52 @@ a {
     font-weight: bold;
     font-size: 18px;
     line-height: 22px;
+}
+
+
+/* Main -- Popular & Catalog List */
+
+.catalog-list {
+    display: grid;
+    grid-template-columns: 267px 267px 267px 267px;
+    gap: 26px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 267px;
+    min-height: 324px;
+    text-align: center;
+}
+
+.catalog-item {
+    position: relative;
+}
+
+.catalog-image {
+    border-radius: 50%;
+    margin-bottom: 13px;
+}
+
+.catalog-item-title {
+    margin: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    text-decoration: underline;
+    text-decoration-color: var(--special-white-opacity);
+}
+
+.catalog-item-cost {
+    position: absolute;
+    bottom: 75px;
+    margin: 0;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 45px;
+    text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
+}
+
+.catalog-item-weight {
+    font-size: 30px;
+    line-height: 35px;
 }
