@@ -16,3 +16,54 @@
     --special-gray: #8996A6;
     --special-brown-dark: #9D8B84;
 }
+
+
+/* Global */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    min-width: 1200px;
+    font-family: "Roboto", "Tahoma", sans-serif;
+    font-size: 16px;
+    line-height: 18px;
+    color: var(--basic-white);
+}
+
+.site-wrapper {
+    background-color: var(--special-green);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0)
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 27px;
+}
+
+
+/* Header */

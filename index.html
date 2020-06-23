@@ -4,12 +4,13 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <div class="site-wrapper">
-    <header class="header">
+    <header class="header container">
       <section class="header-nav">
         <h1 class="visually-hidden">Магазин мороженного Gllacy</h1>
         <a>
@@ -75,7 +76,7 @@
         </ul>
       </section>
     </header>
-    <main>
+    <main class="container">
       <section class="promo">
         <h2 class="visually-hidden">Специальные предложения</h2>
         <ul class="promo-list">
@@ -142,9 +143,9 @@
         <h2 class="visually-hidden">Напишите нам</h2>
         <p class="subscribe-text">Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="POST">
-          <label class="visually-hidden" for="email">Введите E-mail</label>>
+          <label class="visually-hidden" for="email">Введите E-mail</label>
           <input type="email" name="email" id="email">
-          <input class="subscribe-btn" type="button">
+          <button class="subscribe-btn" type="submit">Отправить</button>
         </form>
       </section>
       <section class="find-us">
@@ -159,7 +160,7 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="container">
       <section class="social-links">
         <h2 class="visually-hidden">Наши социальные сети</h2>
         <ul class="social-links-list">
