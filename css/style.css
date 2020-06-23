@@ -2,10 +2,12 @@
 
 :root {
     --basic-black: #323232;
-    --basic-gray: #5a5a5a;
-    --basic-gray-light: #ABABAB;
-    --basic-gray-extra-light: #C4C4C4;
-    --basic-gray-lightest: #CACAC7;
+    --basic-gray-extra-dark: #696969;
+    --basic-gray-dark: #5a5a5a;
+    --basic-gray-normal: #ABABAB;
+    --basic-gray-light: #C4C4C4;
+    --basic-gray-extra-light: #CACAC7;
+    --basic-gray-lightest: #EDEDED;
     --basic-gray-extra-lightest: #F8F7F4;
     --basic-white: #FFFFFF;
     --special-orange: rgba(242, 104, 64, 1);
@@ -103,6 +105,51 @@ a {
 }
 
 .navigation-item {
+    position: relative;
+}
+
+.navigation-item-link {
+    display: block;
+    height: 31px;
+    min-width: 87px;
+    border-radius: 20px;
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-top: 6px;
+    color: var(--basic-white);
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.navigation-link-line {
+    position: absolute;
+    right: 0;
+    bottom: 6px;
+    width: 100%;
+    height: 1px;
+    left: 13px;
+    background-clip: content-box;
+    background-color: var(--special-white-opacity);
+    padding-left: 0px;
+    padding-right: 26px;
+}
+
+.navigation-item-link:hover,
+.navigation-item-link:focus {
+    color: var(--basic-black);
+    background-color: var(--basic-white);
+    outline: none;
+}
+
+.navigation-item-link:active {
+    background-color: var(--basic-gray-lightest);
+    box-shadow: inset 0px 2px 1px var(--basic-gray-extra-dark);
+    border-radius: 26px;
+}
+
+
+/* .navigation-item {
     height: 31px;
     min-width: 87px;
     background-color: var(--special-white-spec-opacity);
@@ -121,6 +168,10 @@ a {
     outline: none;
 }
 
+.navigation-item .navigation-item-link:active {
+    background-color: var(--basic-gray-lightest);
+}
+
 .navigation-item-link:hover,
 .navigation-item-link:focus {
     color: var(--basic-black);
@@ -133,7 +184,7 @@ a {
     line-height: 18px;
     background-size: 1px 1em;
     box-shadow: inset 0 -1px var(--special-white-opacity);
-}
+} */
 
 .navigation-list li:not(:last-child) {
     margin-right: 6px;
