@@ -204,7 +204,12 @@ a {
 .cart:hover,
 .search:focus,
 .login:focus,
-.cart:focus,
+.cart:focus {
+    color: var(--basic-black);
+    background-color: var(--basic-white);
+    outline: none;
+}
+
 .search:hover path,
 .search:focus path,
 .cart:hover path,
@@ -212,9 +217,6 @@ a {
 .login:hover path,
 .login:focus path {
     fill: var(--basic-black);
-    color: var(--basic-black);
-    background-color: var(--basic-white);
-    outline: none;
 }
 
 
