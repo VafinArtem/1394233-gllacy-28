@@ -79,16 +79,19 @@ a {
 
 /* Header */
 
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* Header -- Main Navigation */
+
 .header-nav {
     min-width: 560px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-}
-
-.header-wrapper {
-    display: flex;
-    justify-content: space-between;
 }
 
 .header-logo-link {
@@ -110,33 +113,23 @@ a {
 
 .navigation-item-link {
     display: block;
-    height: 31px;
-    min-width: 87px;
-    border-radius: 20px;
-    padding-left: 13px;
-    padding-right: 13px;
-    padding-top: 6px;
+    margin-left: 13px;
+    margin-right: 13px;
     color: var(--basic-white);
     font-weight: bold;
-    font-size: 16px;
-    line-height: 18px;
-}
-
-.navigation-link-line {
-    position: absolute;
-    right: 0;
-    bottom: 6px;
-    width: 100%;
-    height: 1px;
-    left: 13px;
-    background-clip: content-box;
-    background-color: var(--special-white-opacity);
-    padding-left: 0px;
-    padding-right: 26px;
+    padding-top: 1px;
+    border-bottom: 1px solid var(--special-white-opacity);
 }
 
 .navigation-item-link:hover,
 .navigation-item-link:focus {
+    margin: 0;
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-top: 6px;
+    border-radius: 20px;
+    height: 31px;
+    border: none;
     color: var(--basic-black);
     background-color: var(--basic-white);
     outline: none;
@@ -152,9 +145,15 @@ a {
     margin-right: 6px;
 }
 
+
+/* Header -- Main SubNavigation */
+
 .subnavigation-list {
     display: none;
 }
+
+
+/* Header -- Personel Menu */
 
 .personel-links {
     display: flex;
@@ -216,4 +215,28 @@ a {
     color: var(--basic-black);
     background-color: var(--basic-white);
     outline: none;
+}
+
+
+/* Header -- Openning Hours */
+
+.header-opening-hours {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.opening-hours-text {
+    margin: 0;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 8px;
+}
+
+.header-tel {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 24px;
+    color: var(--basic-white);
 }
