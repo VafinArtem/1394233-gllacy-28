@@ -1,0 +1,18 @@
+/* Variables */
+
+:root {
+    --basic-black: #323232;
+    --basic-gray: #5a5a5a;
+    --basic-gray-light: #ABABAB;
+    --basic-gray-extra-light: #C4C4C4;
+    --basic-gray-lightest: #CACAC7;
+    --basic-gray-extra-lightest: #F8F7F4;
+    --basic-white: #FFFFFF;
+    --special-orange: rgba(242, 104, 64, 1);
+    --special-red: rgba(231, 74, 53, 1);
+    --special-red-dark: #E84D37;
+    --special-brown: #D07058;
+    --special-green: #849D8F;
+    --special-gray: #8996A6;
+    --special-brown-dark: #9D8B84;
+}
