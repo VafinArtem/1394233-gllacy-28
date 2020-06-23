@@ -317,3 +317,85 @@ a {
     line-height: 44px;
     padding: 10px 40px;
 }
+
+
+/* Main */
+
+.main-inner {
+    display: grid;
+    grid-template-columns: 560px 560px;
+    grid-template-rows: min-content min-content min-content min-content;
+    column-gap: 26px;
+    row-gap: 40px;
+    margin-top: 40px;
+}
+
+.popular-products {
+    grid-column: 1/3;
+}
+
+.about-us {
+    grid-column: 1/3;
+}
+
+
+/* Main -- Promo */
+
+.promo {
+    grid-column: 1/3;
+}
+
+.promo-list {
+    display: grid;
+    grid-template-columns: 560px 560px;
+    column-gap: 26px;
+    row-gap: 40px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.promo-item {
+    min-height: 229px;
+    background-color: var(--special-red);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-right: 22px;
+    padding-bottom: 22px;
+}
+
+.crimson {
+    background-image: url(../img/bg-crimson.jpg);
+    background-repeat: no-repeat;
+}
+
+.chocolate {
+    background-image: url(../img/bg-chocolate.jpg);
+    background-repeat: no-repeat;
+}
+
+.promo-btn {
+    display: block;
+    padding: 15px 22px;
+    align-self: flex-end;
+    margin-top: auto;
+}
+
+.promo-title {
+    margin: 0;
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 41px;
+    margin-bottom: 16px;
+}
+
+.promo-desc {
+    margin: 0;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+}
