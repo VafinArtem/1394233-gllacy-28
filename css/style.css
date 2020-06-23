@@ -16,6 +16,7 @@
     --special-red-light: #d84732;
     --special-red-lightest: #e1613e;
     --special-red-opacity: rgba(160, 32, 11, 0.76);
+    --special-red-extra-dark: #AC1000;
     --special-red-dark-opacity: rgba(172, 16, 0, 0.64);
     --special-brown: #D07058;
     --special-green: #849D8F;
@@ -176,13 +177,13 @@ a {
 .button:hover,
 .button:focus {
     background: linear-gradient(to bottom, var(--special-pink), var(--special-pink-dark));
-    box-shadow: 0px 2px 2px var(--special-red-dark-opacity);
+    box-shadow: 0px 2px 2px var(--special-red-extra-dark);
     outline: none;
 }
 
 .button:active {
     background: linear-gradient(to bottom, var(--special-red-light), var(--special-red-lightest));
-    box-shadow: 0px 2px 2px var(--special-red-dark-opacity);
+    box-shadow: inset 0px 2px 2px var(--special-red-dark-opacity);
 }
 
 
@@ -280,7 +281,7 @@ a {
 /* Header -- Slider */
 
 .header-slider {
-    margin-top: 275px;
+    margin-top: 272px;
 }
 
 .slider-list {
@@ -294,6 +295,7 @@ a {
 
 .slider-item {
     display: none;
+    padding-right: 38px;
 }
 
 .slider-active {
