@@ -10,6 +10,7 @@
     --basic-gray-extra-light: #CACAC7;
     --basic-gray-lightest: #EDEDED;
     --basic-gray-extra-lightest: #F8F7F4;
+    --basic-white-mid: #FEFEFE;
     --basic-white: #FFFFFF;
     --special-orange: #F26843;
     --special-red: #E74A35;
@@ -691,4 +692,49 @@ a {
 
 .find-us {
     padding: 0;
+    position: relative;
+}
+
+.address {
+    position: absolute;
+    top: 63px;
+    right: 27px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--basic-white-mid);
+    border-radius: 16px;
+    width: 303px;
+    min-height: 306px;
+    padding: 29px 25px;
+}
+
+.address-text {
+    margin: 0;
+    color: var(--basic-black);
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.address-desc {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.adress-text-link {
+    color: var(--basic-black);
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.address-btn {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    padding: 10px 10px;
+    margin-bottom: 2px;
+    margin-top: 6px;
 }
