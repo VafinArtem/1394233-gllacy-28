@@ -25,13 +25,15 @@
     --special-gray: #8996A6;
     --special-gray-opacity: rgba(178, 178, 178, 0.52);
     --special-gray-dark-opacity: rgba(49, 50, 53, 0.5);
+    --special-gray-darkest-opacity: rgba(50, 50, 50, 0.2);
     --special-brown-dark: #9D8B84;
     --special-white-opacity: rgba(255, 255, 255, 0.2);
-    --special-white-spec-opacity: rgba(255, 255, 255, 0);
     --special-black-opacity: rgba(0, 0, 0, 0.2);
     --special-blue-opacity: rgba(46, 136, 228, 0.52);
+    --special-pink-light: #FFBC9E;
     --special-pink: #f58669;
     --special-pink-dark: #ec6f5e;
+    --special-pink-opacity: rgba(255, 188, 158, 0.3);
 }
 
 
@@ -111,6 +113,10 @@ a {
     padding-top: 9px;
 }
 
+.navigation {
+    position: relative;
+}
+
 .navigation-list {
     list-style: none;
     padding: 0;
@@ -162,7 +168,38 @@ a {
 /* Header -- Main SubNavigation */
 
 .subnavigation-list {
-    display: none;
+    position: absolute;
+    width: 143px;
+    height: 171px;
+    background-color: var(--basic-white);
+    list-style: none;
+    margin: 0;
+    padding: 13px 21px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.subnavigation-item-link {
+    color: var(--basic-black);
+}
+
+.subnavigation-item:first-child {
+    position: relative;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.subnavigation-item:first-child::after {
+    content: "";
+    position: absolute;
+    width: 128px;
+    height: 1px;
+    background-color: --special-gray-darkest-opacity;
 }
 
 .button {
@@ -178,6 +215,9 @@ a {
     color: var(--basic-white);
     text-align: center;
     vertical-align: top;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
 }
 
 .button:hover,
@@ -379,11 +419,8 @@ a {
 }
 
 .promo-btn {
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 24px;
     display: block;
-    padding: 15px 22px;
+    padding: 13px 22px;
     align-self: flex-end;
     margin-top: auto;
 }
@@ -469,9 +506,6 @@ a {
 }
 
 .catalog-item-btn {
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 24px;
     padding: 12px 16px;
     margin-top: auto;
     margin-left: auto;
@@ -641,9 +675,6 @@ a {
     margin-left: 10px;
     display: block;
     padding: 10px 16px;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 24px;
 }
 
 .subscribe-email {
@@ -690,6 +721,10 @@ a {
 
 /* Main -- Map */
 
+.map {
+    height: 430px;
+}
+
 .find-us {
     padding: 0;
     position: relative;
@@ -731,9 +766,6 @@ a {
 }
 
 .address-btn {
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 24px;
     padding: 10px 10px;
     margin-bottom: 2px;
     margin-top: 6px;
@@ -746,10 +778,16 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-top: 18px;
+    padding-bottom: 25px;
 }
 
 
 /* Footer -- Social Network */
+
+.social-links {
+    padding-top: 6px;
+}
 
 .social-links-list {
     list-style: none;
@@ -779,4 +817,83 @@ a {
     fill-opacity: 1;
     opacity: 1;
     stroke-opacity: 0.7;
+}
+
+
+/* Footer -- Menu */
+
+.footer-menu {
+    padding-top: 6px;
+    margin-left: 24px;
+}
+
+.footer-menu-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 305px;
+}
+
+.footer-menu-item {
+    min-width: 143px;
+    margin-top: 2px;
+    margin-bottom: 1px;
+}
+
+.footer-menu-item-link {
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+    color: var(--basic-white);
+    border-bottom: 1px solid var(--special-white-opacity);
+}
+
+.footer-menu-item:nth-child(2n) {
+    flex-grow: 1;
+}
+
+.footer-menu-item:first-child .footer-menu-item-link {
+    font-weight: bold;
+}
+
+.footer-menu-item:first-child {
+    position: relative;
+}
+
+.footer-menu-item:first-child::before {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 13px;
+    background-image: url(../img/icon-heart.svg);
+    background-repeat: no-repeat;
+    top: 5px;
+    left: -21px;
+}
+
+.footer-menu-item-link:hover,
+.copyright-link:hover,
+.footer-menu-item-link:focus,
+.copyright-link:focus {
+    color: var(--special-pink-light);
+    border-bottom: 1px solid var(--special-pink-opacity);
+}
+
+
+/* Footer -- Copyright */
+
+.copyright-text {
+    margin: 0;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.copyright-link {
+    color: var(--basic-white);
+    border-bottom: 1px solid var(--special-white-opacity);
 }
