@@ -738,3 +738,45 @@ a {
     margin-bottom: 2px;
     margin-top: 6px;
 }
+
+
+/* Footer */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Footer -- Social Network */
+
+.social-links-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-links-item {
+    width: 36px;
+    height: 36px;
+}
+
+.social-links-item:not(:last-child) {
+    margin-right: 8px;
+}
+
+.social-links-item-link:hover .social-link-bg,
+.social-links-item-link:focus .social-link-bg {
+    fill-opacity: 1;
+    opacity: 1;
+}
+
+.social-links-item-link:active .social-link-bg,
+.social-links-item-link:active .social-link-border {
+    fill-opacity: 1;
+    opacity: 1;
+    stroke-opacity: 0.7;
+}
