@@ -92,6 +92,41 @@ a {
 }
 
 
+/* Global Selector Style */
+
+.subscribe-email:hover,
+.search:hover {
+    border: 2px solid var(--special-gray-opacity);
+    padding-left: 13px;
+    padding-right: 13px;
+}
+
+.subscribe-email:focus,
+.search:focus {
+    border: 2px solid var(--special-blue-opacity);
+    padding-left: 13px;
+    padding-right: 13px;
+    outline: none;
+}
+
+.subscribe-email::-moz-placeholder,
+.search::-moz-placeholder {
+    font-family: "Roboto", "Tahoma", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: var(--basic-gray-mid-dark);
+}
+
+.subscribe-email::-webkit-input-placeholder,
+.search::-webkit-input-placeholder {
+    font-family: "Roboto", "Tahoma", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--basic-gray-mid-dark);
+}
+
+
 /* Header */
 
 .header-wrapper {
@@ -197,8 +232,8 @@ a {
 
 .navigation-item:hover .subnavigation-wrapper,
 .navigation-item:focus-within .subnavigation-wrapper {
-    opacity: 1;
     top: 100%;
+    opacity: 1;
 }
 
 
@@ -210,8 +245,8 @@ a {
     height: 171px;
     background-color: transparent;
     display: flex;
-    opacity: 0;
     align-items: flex-end;
+    opacity: 0;
     top: -9999px;
     left: -7px;
     border-top: 5px solid transparent;
@@ -231,6 +266,7 @@ a {
     font-size: 14px;
     line-height: 16px;
     border-radius: 4px;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
 }
 
 .subnavigation-item-link {
@@ -264,7 +300,7 @@ a {
     min-width: 267px;
 }
 
-.search,
+.search-link,
 .login,
 .cart {
     display: block;
@@ -296,15 +332,15 @@ a {
     bottom: 7px;
 }
 
-.search {
+.search-link {
     width: 32px;
     border-radius: 50%;
 }
 
-.search:hover,
+.search-link:hover,
 .login:hover,
 .cart:hover,
-.search:focus,
+.search-link:focus,
 .login:focus,
 .cart:focus {
     color: var(--basic-black);
@@ -312,13 +348,61 @@ a {
     outline: none;
 }
 
-.search:hover path,
-.search:focus path,
+.search-link:hover path,
+.search-link:focus path,
 .cart:hover path,
 .cart:focus path,
 .login:hover path,
 .login:focus path {
     fill: var(--basic-black);
+}
+
+
+/* Header -- Personel Menu -- Search Form */
+
+.search-wrapper {
+    position: relative;
+}
+
+.search-inner {
+    position: absolute;
+    display: none;
+    width: 341px;
+    top: 32px;
+    right: 100%;
+    margin-right: -32px;
+    border-top: 3px solid transparent;
+}
+
+.search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 341px;
+    height: 84px;
+    background-color: var(--basic-gray-extra-lightest);
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
+    border-radius: 4px;
+}
+
+.search {
+    width: 311px;
+    height: 44px;
+    border-radius: 4px;
+    border: 1px solid var(--special-gray-opacity);
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    padding-left: 14px;
+    padding-right: 14px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.search-wrapper:hover .search-inner,
+.search-wrapper:focus-within .search-inner {
+    display: block;
 }
 
 
