@@ -214,10 +214,7 @@ a {
 }
 
 .navigation-item-link:hover,
-.navigation-item-link:focus,
-.subnavigation-wrapper:hover+.navigation-item-link,
-.navigation-item:hover .navigation-item-link,
-.subnavigation-wrapper:focus-within+.navigation-item-link {
+.navigation-item-link:focus {
     margin: 0;
     padding-left: 13px;
     padding-right: 13px;
@@ -241,8 +238,7 @@ a {
 
 .navigation-item:hover .subnavigation-wrapper,
 .navigation-item:focus-within .subnavigation-wrapper {
-    top: 100%;
-    opacity: 1;
+    display: flex;
 }
 
 
@@ -253,10 +249,9 @@ a {
     position: absolute;
     height: 171px;
     background-color: transparent;
-    display: flex;
+    display: none;
     align-items: flex-end;
-    opacity: 0;
-    top: -9999px;
+    top: 100%;
     left: -7px;
     border-top: 5px solid transparent;
 }
