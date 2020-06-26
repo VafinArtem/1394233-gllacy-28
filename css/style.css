@@ -727,6 +727,64 @@ a {
     display: flex;
 }
 
+.catalog-filter-title {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 0;
+    margin: 0;
+    padding-left: 16px;
+    margin-bottom: 7px;
+}
+
+.catalog-filter-box {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.catalog-sorting {
+    background-color: var(--special-white-opacity);
+    background-image: url(../img/icon-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: 171px;
+    width: 196px;
+    height: 36px;
+    border-radius: 20px;
+    border: none;
+    padding-left: 16px;
+    color: var(--basic-white);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+}
+
+.select-arrow {
+    position: absolute;
+    width: 11px;
+    height: 10px;
+    right: 0;
+    top: 0;
+}
+
+.catalog-sorting:hover,
+.catalog-sorting:focus {
+    color: var(--basic-black);
+    background-image: url(../img/icon-arrow-black.svg);
+}
+
+.select-arrow:hover path,
+.select-arrow:focus {
+    fill: var(--basic-black);
+}
+
+.select-item {
+    color: var(--basic-black);
+}
+
 
 /* Main -- Popular & Catalog List */
 
@@ -734,11 +792,16 @@ a {
     grid-column: 1/3;
 }
 
+.catalog {
+    margin-top: 9px;
+}
+
 .catalog-title {
     margin: 0;
     font-weight: bold;
     font-size: 35px;
     line-height: 41px;
+    margin-bottom: 29px;
 }
 
 .catalog-list {
@@ -759,7 +822,6 @@ a {
 }
 
 .catalog-image {
-    border-radius: 50%;
     margin-bottom: 9px;
 }
 
@@ -797,6 +859,7 @@ a {
     top: -6px;
     border-radius: 4px;
     box-shadow: 0px 20px 20px var(--special-black-opacity);
+    z-index: 10;
 }
 
 .catalog-item-btn {
