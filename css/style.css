@@ -57,6 +57,7 @@ body {
     min-width: 1200px;
     font-family: "Roboto", "Tahoma", sans-serif;
     color: var(--basic-white);
+    background-color: var(--special-green);
 }
 
 .site-wrapper {
@@ -96,6 +97,10 @@ a {
 
 
 /* Global Selector Style */
+
+.site-wrapper.catalog-wrapper {
+    background-image: none;
+}
 
 .subscribe-email:hover,
 .search:hover,
