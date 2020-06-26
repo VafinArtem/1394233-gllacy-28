@@ -966,19 +966,22 @@ input::-webkit-inner-spin-button {
     margin: 0;
     padding: 0;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     background-color: var(--special-white-opacity);
     border-radius: 20px;
-    padding-right: 21px;
-    padding-left: 21px;
+    padding-right: 17px;
+    padding-left: 14px;
 }
 
 .catalog-fat-list {
-    min-width: 376px;
+    min-width: 425px;
 }
 
 .catalog-fillers-list {
-    min-width: 630px;
+    min-width: 711px;
+    padding-right: 20px;
+    padding-left: 14px;
 }
 
 .catalog-fat-item {
@@ -996,10 +999,9 @@ input::-webkit-inner-spin-button {
 
 .radio-box {
     position: absolute;
-    margin-left: 22px;
     width: 22px;
     height: 22px;
-    left: -17px;
+    left: 0px;
     top: -2px;
     background-image: url("data:image/svg+xml,%3Csvg width='22' height='22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 3.52A7.48 7.48 0 113.52 11 7.489 7.489 0 0111 3.52zM11 0a11 11 0 100 22 11 11 0 000-22z' fill='%23fff' fill-opacity='.8'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
@@ -1038,16 +1040,15 @@ input::-webkit-inner-spin-button {
 
 .catalog-fillers-item {
     position: relative;
-    padding-left: 34px;
+    padding-left: 32px;
 }
 
 .check-box {
     position: absolute;
-    margin-left: 23px;
     width: 20px;
     height: 20px;
-    left: -17px;
-    top: -2px;
+    left: 1px;
+    top: -1px;
     background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M17.391 1.74a.87.87 0 01.87.869V17.39a.87.87 0 01-.87.87H2.61a.87.87 0 01-.87-.87V2.61a.87.87 0 01.87-.87H17.39zm0-1.74H2.61A2.609 2.609 0 000 2.609V17.39A2.609 2.609 0 002.609 20H17.39A2.608 2.608 0 0020 17.391V2.61A2.608 2.608 0 0017.391 0z' fill='%23fff' fill-opacity='.8'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
     cursor: pointer;
