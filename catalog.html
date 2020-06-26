@@ -118,9 +118,22 @@
               <option class="select-item" value="fat">по жирности</option>
             </select>
           </fieldset>
-          <fieldset class="catalog-filter-box">
-            <legend class="catalog-filter-title">Цена: 100 ₽ – 500 ₽</legend>
-          </fieldset>
+          <div class="catalog-filter-box cost">
+            <h3 class="catalog-cost-title">Цена:</h3>
+            <div class="price-controls">
+              <label for="min-price" class="visually-hidden">Минимальная цена</label>
+              <input type="number" id="min-price" name="min-price" value="100">
+              <label for="max-price" class="visually-hidden">Максимальная цена</label>
+              <input type="number" id="max-price" name="max-price" value="500">
+            </div>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="toggle toggle-min" tabindex="0" aria-label="Ползунок минимальной цены"></div>
+              <div class="toggle toggle-max" tabindex="0" aria-label="Ползунок максимальной цены"></div>
+            </div>
+          </div>
           <fieldset class="catalog-filter-box">
             <legend class="catalog-filter-title">Жирность:</legend>
             <ul class="catalog-fat-list">
