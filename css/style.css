@@ -466,6 +466,7 @@ a {
     gap: 20px;
     grid-template-columns: 103px 1fr;
     grid-template-rows: min-content min-content min-content;
+    z-index: 10;
 }
 
 .login-email {
@@ -731,7 +732,7 @@ a {
     width: 884px;
     flex-wrap: wrap;
     display: flex;
-    margin-bottom: 40px;
+    margin-bottom: 41px;
 }
 
 .catalog-filter-title {
@@ -1109,18 +1110,19 @@ input::-webkit-inner-spin-button {
 .catalog-list {
     display: grid;
     grid-template-columns: 267px 267px 267px 267px;
-    gap: 26px;
+    row-gap: 36px;
+    column-gap: 26px;
     list-style: none;
     padding: 0;
     margin: 0;
     width: 267px;
-    min-height: 324px;
     text-align: center;
 }
 
 .catalog-item {
     position: relative;
     outline: none;
+    min-height: 324px;
 }
 
 .catalog-image {
