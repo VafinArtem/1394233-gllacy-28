@@ -543,8 +543,9 @@ a {
     list-style: none;
     margin: 0;
     padding: 0;
+    padding-top: 10px;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
 }
 
 .breadcrumbs-item:not(:last-child) {
@@ -740,7 +741,7 @@ a {
     padding: 0;
     margin: 0;
     padding-left: 16px;
-    margin-bottom: 7px;
+    margin-bottom: 6px;
 }
 
 .catalog-filter-box {
@@ -832,14 +833,13 @@ a {
 }
 
 .catalog-cost-title {
-    width: 54px;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
     padding: 0;
     margin: 0;
     padding-left: 16px;
-    margin-bottom: 7px;
+    margin-bottom: 6px;
 }
 
 .price-controls {
@@ -847,9 +847,11 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90px;
-    height: 16px;
+    width: 94px;
+    height: 13px;
     margin: 0;
+    padding-left: 4px;
+    padding-right: 12px;
 }
 
 .price-controls::after {
@@ -860,8 +862,28 @@ a {
     height: 1px;
     background-color: var(--basic-white);
     right: 50%;
-    margin-right: -3px;
-    top: 18px;
+    margin-right: -5px;
+    top: 6px;
+}
+
+.price-box {
+    position: relative;
+}
+
+.min-price-wrapper,
+.max-price-wrapper {
+    position: relative;
+}
+
+.min-price-wrapper::after,
+.max-price-wrapper::after {
+    content: "₽";
+    position: absolute;
+    right: -13px;
+    top: 2px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
 }
 
 .price-controls input {
@@ -895,7 +917,7 @@ input::-webkit-inner-spin-button {
     height: 36px;
     background-color: var(--special-white-opacity);
     border-radius: 20px;
-    padding-top: 18px;
+    padding-top: 16px;
     padding-right: 21px;
     padding-left: 21px;
 }
@@ -906,14 +928,15 @@ input::-webkit-inner-spin-button {
 }
 
 .range-controls .bar {
-    width: 70%;
+    width: 55%;
+    margin-left: 23px;
     height: 2px;
     background: var(--basic-white-adv);
 }
 
 .range-controls .toggle {
     position: absolute;
-    top: 9px;
+    top: 7px;
     box-sizing: content-box;
     width: 4px;
     height: 4px;
@@ -926,11 +949,11 @@ input::-webkit-inner-spin-button {
 }
 
 .range-controls .toggle-min {
-    left: 18px;
+    left: 34px;
 }
 
 .range-controls .toggle-max {
-    left: 140px;
+    left: 132px;
 }
 
 
@@ -951,11 +974,11 @@ input::-webkit-inner-spin-button {
 }
 
 .catalog-fat-list {
-    min-width: 425px;
+    min-width: 376px;
 }
 
 .catalog-fillers-list {
-    min-width: 711px;
+    min-width: 630px;
 }
 
 .catalog-fat-item {
@@ -1071,7 +1094,7 @@ input::-webkit-inner-spin-button {
 }
 
 .catalog {
-    margin-top: 9px;
+    margin-top: -8px;
 }
 
 .catalog-title {
@@ -1079,7 +1102,7 @@ input::-webkit-inner-spin-button {
     font-weight: bold;
     font-size: 35px;
     line-height: 41px;
-    margin-bottom: 29px;
+    margin-bottom: 27px;
 }
 
 .catalog-list {
