@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -138,16 +139,32 @@
             <legend class="catalog-filter-title">Жирность:</legend>
             <ul class="catalog-fat-list">
               <li class="catalog-fat-item">
-                <input type="radio" name="fat" value="0"> 0%
+                <label class="check">
+                <input class="radio-input" type="radio" name="fat" value="0">
+                <span class="radio-box"></span>
+                 0%
+              </label>
               </li>
               <li class="catalog-fat-item">
-                <input type="radio" name="fat" value="up-10"> до 10%
+                <label class="check">
+                <input class="radio-input" type="radio" name="fat" value="up-10"> 
+                <span class="radio-box"></span>
+                до 10%
+              </label>
               </li>
               <li class="catalog-fat-item">
-                <input type="radio" name="fat" value="up-30"> до 30%
+                <label class="check">
+                <input class="radio-input" type="radio" name="fat" value="up-30"> 
+                <span class="radio-box"></span>
+                до 30%
+              </label>
               </li>
               <li class="catalog-fat-item">
-                <input type="radio" name="fat" value="above-30"> выше 30%
+                <label class="check">
+                <input class="radio-input" type="radio" name="fat" value="above-30"> 
+                <span class="radio-box"></span>
+                выше 30%
+              </label>
               </li>
             </ul>
           </fieldset>
