@@ -21,14 +21,14 @@
           <nav class="navigation">
             <ul class="navigation-list">
               <li class="navigation-item">
-                <a href="#" class="navigation-item-link">Каталог</a>
+                <a href="#" class="navigation-item-link current-link">Каталог</a>
                 <div class="subnavigation-wrapper">
                   <ul class="subnavigation-list">
                     <li class="subnavigation-item">
                       <a class="subnavigation-item-link" href="#">Новинки</a>
                     </li>
                     <li class="subnavigation-item">
-                      <a class="subnavigation-item-link" href="catalog.html">Сливочное</a>
+                      <a class="subnavigation-item-link current-link" href="catalog.html">Сливочное</a>
                     </li>
                     <li class="subnavigation-item">
                       <a class="subnavigation-item-link" href="#">Щербеты</a>
@@ -86,9 +86,10 @@
               </form>
             </div>
           </div>
-          <a href="#" class="cart" title="Корзина">
+          <a href="#" class="cart cart-full" title="Корзина">
             <svg width="21" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M5.703 2l-.241-2H0v2h3.668l1.511 13h14.108L21 2H5.703zm11.8 11H6.973L5.965 4h12.727l-1.189 9zM7.034 20a2.008 2.008 0 002.015-2c0-1.105-.902-2-2.015-2a2.008 2.008 0 00-2.016 2c0 1.105.903 2 2.016 2zM16.103 20a2.008 2.008 0 002.015-2c0-1.105-.902-2-2.015-2a2.008 2.008 0 00-2.016 2c0 1.105.903 2 2.016 2z" fill="#fff"/>
+              <path d="M7.034 20a2.008 2.008 0 002.015-2c0-1.105-.902-2-2.015-2a2.008 2.008 0 00-2.016 2c0 1.105.903 2 2.016 2zM16.103 20a2.008 2.008 0 002.015-2c0-1.105-.902-2-2.015-2a2.008 2.008 0 00-2.016 2c0 1.105.903 2 2.016 2zM5.703 2l-.241-2H0v2h3.668l1.511 13h14.108L21 2H5.703zm11.8 11H6.973L5.965 4h12.727l-1.189 9z" fill="#343434"/>
+              <path d="M5.935 4.03L6.973 13h10.53l1.19-8.97H5.934z" fill="#E84D37"/>
             </svg> 2 товара
           </a>
         </section>
@@ -120,24 +121,24 @@
             </select>
           </fieldset>
           <div class="catalog-filter-box cost">
-            <h4 class="catalog-filter-title">Цена:</h3>
-              <div class="price-controls">
-                <div class="min-price-wrapper">
-                  <label for="min-price" class="visually-hidden">Минимальная цена</label>
-                  <input type="number" id="min-price" name="min-price" value="100">
-                </div>
-                <div class="max-price-wrapper">
-                  <label for="max-price" class="visually-hidden">Максимальная цена</label>
-                  <input type="number" id="max-price" name="max-price" value="500">
-                </div>
+            <h4 class="catalog-filter-title">Цена:</h4>
+            <div class="price-controls">
+              <div class="min-price-wrapper">
+                <label for="min-price" class="visually-hidden">Минимальная цена</label>
+                <input type="number" id="min-price" name="min-price" value="100">
               </div>
-              <div class="range-controls">
-                <div class="scale">
-                  <div class="bar"></div>
-                </div>
-                <div class="toggle toggle-min" tabindex="0" aria-label="Ползунок минимальной цены"></div>
-                <div class="toggle toggle-max" tabindex="0" aria-label="Ползунок максимальной цены"></div>
+              <div class="max-price-wrapper">
+                <label for="max-price" class="visually-hidden">Максимальная цена</label>
+                <input type="number" id="max-price" name="max-price" value="500">
               </div>
+            </div>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="toggle toggle-min" tabindex="0" aria-label="Ползунок минимальной цены"></div>
+              <div class="toggle toggle-max" tabindex="0" aria-label="Ползунок максимальной цены"></div>
+            </div>
           </div>
           <fieldset class="catalog-filter-box">
             <legend class="catalog-filter-title">Жирность:</legend>
@@ -321,15 +322,23 @@
           </li>
         </ul>
         <div class="pagination">
-          <a class="pagination-item-prev">Предыдущая страница</a>
+          <a href="#" class="pagination-item-prev first-item">
+            <svg width="7" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6.841 5.659L.932.149A.57.57 0 00.546 0a.57.57 0 00-.387.149.47.47 0 000 .71l5.533 5.14-5.533 5.17a.498.498 0 00-.159.355.47.47 0 00.041.192.5.5 0 00.118.163.575.575 0 00.387.12.538.538 0 00.376-.15l5.92-5.48a.47.47 0 000-.71z" fill="#fff"/>
+            </svg>
+          </a>
           <ul class="pagination-list">
-            <li class="pagination-item"><a href="#" class="pagination-link">1</a></li>
+            <li class="pagination-item"><a href="#" class="pagination-link current-link">1</a></li>
             <li class="pagination-item"><a href="#" class="pagination-link">2</a></li>
             <li class="pagination-item"><a href="#" class="pagination-link">3</a></li>
             <li class="pagination-item"><a href="#" class="pagination-link">4</a></li>
             <li class="pagination-item"><a href="#" class="pagination-link">5</a></li>
           </ul>
-          <a class="pagination-item-nex">Следующая страница</a>
+          <a href="#" class="pagination-item-next">
+            <svg width="7" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6.841 5.659L.932.149A.57.57 0 00.546 0a.57.57 0 00-.387.149.47.47 0 000 .71l5.533 5.14-5.533 5.17a.498.498 0 00-.159.355.47.47 0 00.041.192.5.5 0 00.118.163.575.575 0 00.387.12.538.538 0 00.376-.15l5.92-5.48a.47.47 0 000-.71z" fill="#fff"/>
+            </svg>
+          </a>
         </div>
       </section>
     </main>
