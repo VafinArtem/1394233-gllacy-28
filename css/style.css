@@ -158,7 +158,6 @@ a {
     display: inline-block;
     text-decoration: none;
     text-shadow: 0 2px 5px var(--special-red-opacity);
-    background: var(--special-orange);
     background: linear-gradient(to bottom, var(--special-orange), var(--special-red));
     border-radius: 50px;
     box-shadow: 0px 2px 2px var(--special-red-dark-opacity);
@@ -415,6 +414,163 @@ a {
 .cart-full:focus {
     outline: auto;
 }
+
+
+/* Header -- Personel Menu -- Cart Box */
+
+.cart-wrapper {
+    position: relative;
+}
+
+.cart-wrapper:hover .cart-inner,
+.cart-wrapper:focus-within .cart-inner {
+    display: block;
+}
+
+.cart-inner {
+    position: absolute;
+    display: none;
+    border-top: 3px solid transparent;
+    right: 100%;
+    z-index: 10;
+    margin-right: -130px;
+}
+
+.cart-box {
+    width: 539px;
+    min-height: 242px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    background-color: var(--basic-gray-extra-lightest);
+    box-shadow: 0px 20px 20px var(--special-black-adv-opacity);
+    padding-top: 20px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.cart-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--basic-gray-extra-light);
+}
+
+.cart-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 40px;
+}
+
+.cart-item:not(:last-child) {
+    margin-bottom: 11px;
+}
+
+.cart-item-delete {
+    position: relative;
+    border: none;
+    background-color: transparent;
+    width: 11px;
+    height: 11px;
+    margin-right: 13px;
+    cursor: pointer;
+}
+
+.cart-item-delete::before,
+.cart-item-delete::after {
+    content: "";
+    position: absolute;
+    height: 14px;
+    width: 1px;
+    bottom: 2px;
+    right: 1px;
+    background-color: var(--basic-black);
+}
+
+.cart-item-delete:before {
+    transform: rotate(45deg);
+}
+
+.cart-item-delete:after {
+    transform: rotate(-45deg);
+}
+
+.cart-img {
+    margin-right: 13px;
+    padding-bottom: 4px;
+}
+
+.cart-item-desc,
+.cart-item-weight,
+.cart-item-price {
+    margin: 0;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    color: var(--basic-black);
+}
+
+.cart-item-desc {
+    width: 216px;
+}
+
+.cart-weight-cost {
+    color: var(--basic-gray-normal);
+}
+
+.cart-item-text-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-start;
+    width: 417px;
+    padding-top: 11px;
+}
+
+.total-price-wrap {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 18px;
+    margin-bottom: 12px;
+}
+
+.total-price-text,
+.total-price-ammount {
+    margin: 0;
+    color: var(--basic-black);
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 16px;
+}
+
+.total-price-text {
+    margin-right: 5px;
+}
+
+.cart-btn {
+    margin-left: auto;
+    padding-left: 16px;
+    padding-right: 15px;
+    height: 44px;
+}
+
+
+/* .img-cart-wrapper {
+    display: flex;
+    align-items: flex-end;
+    min-height: 40px;
+} */
+
+
+/* .cart-item-weight {
+    align-self: baseline;
+}
+
+.cart-img {
+    align-self: flex-end;
+    padding-top: 10px;
+} */
 
 
 /* Header -- Personel Menu -- Search Form */
