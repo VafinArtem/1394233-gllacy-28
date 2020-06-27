@@ -1331,7 +1331,7 @@ input::-webkit-inner-spin-button {
 
 .catalog-item-cost {
     position: absolute;
-    bottom: 71px;
+    top: 209px;
     margin: 0;
     font-weight: bold;
     font-size: 45px;
@@ -1347,7 +1347,7 @@ input::-webkit-inner-spin-button {
 .catalog-item-wrapper {
     position: absolute;
     width: 293px;
-    min-height: 402px;
+    min-height: 125%;
     background-color: var(--special-white-opacity);
     display: none;
     left: -13px;
