@@ -61,7 +61,7 @@ body {
     min-width: 1200px;
     font-family: "Roboto", "Tahoma", sans-serif;
     color: var(--basic-white);
-    background-color: var(--special-green);
+    height: 100%;
 }
 
 .site-wrapper {
@@ -71,6 +71,7 @@ body {
     background-position: top center;
     display: grid;
     grid-template-rows: min-content 1fr min-content;
+    min-height: 100%;
 }
 
 img {
@@ -839,7 +840,7 @@ a {
 .main-inner {
     display: grid;
     grid-template-columns: 560px 560px;
-    grid-template-rows: min-content min-content min-content 220px;
+    grid-template-rows: min-content min-content min-content min-content;
     column-gap: 26px;
     row-gap: 40px;
     margin-top: 40px;
@@ -879,12 +880,14 @@ a {
     background-image: url(../img/bg-crimson.jpg);
     background-color: var(--special-red);
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .chocolate {
     background-image: url(../img/bg-chocolate.jpg);
     background-color: var(--special-brown);
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .promo-btn {
@@ -1281,6 +1284,10 @@ input::-webkit-inner-spin-button {
 
 .catalog {
     margin-top: -8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
 }
 
 .catalog-title {
@@ -1367,11 +1374,15 @@ input::-webkit-inner-spin-button {
 
 /* Main -- Catalog -- Pagination */
 
+.pagination-wrapper {
+    margin-top: auto;
+}
+
 .pagination {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    margin-top: 80px;
+    margin-top: 76px;
     margin-bottom: 30px;
 }
 
@@ -1381,11 +1392,11 @@ input::-webkit-inner-spin-button {
     padding: 0;
     display: flex;
     align-items: center;
-    margin: 0 16px;
+    margin: 0 18px;
 }
 
-.pagination-item {
-    margin-left: 2px;
+.pagination-item:not(:first-child) {
+    margin-left: 4px;
 }
 
 .pagination-link {
@@ -1522,6 +1533,7 @@ input::-webkit-inner-spin-button {
     border-radius: 16px;
     padding-top: 19px;
     padding-left: 20px;
+    min-height: 220px;
 }
 
 .blog-title {
@@ -1549,6 +1561,7 @@ input::-webkit-inner-spin-button {
 /* Main -- Subscribe */
 
 .subscribe-wrapper {
+    min-width: 220px;
     border-radius: 16px;
     background-image: url(../img/bg-post.png);
 }
@@ -1579,13 +1592,13 @@ input::-webkit-inner-spin-button {
 }
 
 .subscribe-btn {
-    margin-left: 10px;
     display: block;
-    padding: 10px 16px;
+    margin-left: 11px;
+    padding: 10px 18px;
 }
 
 .subscribe-email {
-    width: 368px;
+    flex-grow: 1;
     height: 44px;
     border-radius: 6px;
     border: 1px solid var(--special-gray-opacity);
