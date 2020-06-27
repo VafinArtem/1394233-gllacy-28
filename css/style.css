@@ -32,6 +32,7 @@
     --special-gray-dark-opacity: rgba(49, 50, 53, 0.5);
     --special-gray-darkest-opacity: rgba(50, 50, 50, 0.2);
     --special-white-opacity: rgba(255, 255, 255, 0.2);
+    --special-white-mid-opacity: rgba(255, 255, 255, 0.4);
     --special-white-adv-opacity: rgba(248, 247, 244, 0.5);
     --special-black-opacity: rgba(0, 0, 0, 0.2);
     --special-black-adv-opacity: rgba(0, 0, 0, 0.4);
@@ -797,6 +798,7 @@ a {
 /* Header -- Slider */
 
 .header-slider {
+    position: relative;
     margin-top: 272px;
 }
 
@@ -832,6 +834,41 @@ a {
     font-size: 32px;
     line-height: 44px;
     padding: 10px 40px;
+}
+
+.slider-toggle-list {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    min-width: 79px;
+    bottom: 23px;
+}
+
+.slider-toggle {
+    width: 21px;
+    height: 21px;
+    border: 2px solid var(--basic-white);
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: transparent;
+    outline: none;
+}
+
+.slider-toggle:hover,
+.slider-toggle:focus {
+    background-color: var(--special-white-mid-opacity);
+}
+
+.slider-toggle:active {
+    background-color: var(--basic-white);
+}
+
+.slider-toggle.active-toggle {
+    background-color: var(--basic-white);
+    pointer-events: none;
 }
 
 
@@ -1280,6 +1317,17 @@ input::-webkit-inner-spin-button {
 
 .popular-products {
     grid-column: 1/3;
+}
+
+.hit {
+    position: absolute;
+    width: 61px;
+    height: 61px;
+    border-radius: 50%;
+    background-color: var(--basic-white);
+    background-image: url(../img/icon-hit.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
 }
 
 .catalog {
