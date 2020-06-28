@@ -256,6 +256,22 @@
         <p class="copyright-text">Сделано в <a class="copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019</p>
       </div>
     </footer>
+    <div class="writeus-popup-wrapper">
+      <section class="writeus-popup">
+        <h2 class="visually-hidden">Форма обоатной связи</h2>
+        <p class="writeus-desc">Мы обязательно вам ответим!</p>
+        <button class="writeus-btn-close" type="button" aria-label="Закрыть окно"></button>
+        <form class="writeus-form" action="https://echo.htmlacademy.ru/" method="POST">
+          <label class="visually-hidden" for="writeus-name">Ваше имя и фамилия</label>
+          <input class="writeus-name" name="writeus-name" id="writeus-name" type="text" placeholder="Имя Фамилия">
+          <label class="visually-hidden" for="writeus-email">Ваш Email</label>
+          <input class="writeus-email" name="writeus-email" id="writeus-email" type="email" placeholder="email@example.com">
+          <label class="visually-hidden" for="writeus-text">Введите сообщение для нас</label>
+          <textarea class="writeus-text" name="writeus-text" id="writeus-text" placeholder="В свободной форме"></textarea>
+          <button type="submit" class="button writeus-btn">Отправить</button>
+        </form>
+      </section>
+    </div>
   </div>
 </body>
 
