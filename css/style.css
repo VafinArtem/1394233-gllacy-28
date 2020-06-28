@@ -67,9 +67,6 @@ body {
 
 .site-wrapper {
     background-color: var(--special-green);
-    background-image: url(../img/bg-image-1.png);
-    background-repeat: no-repeat;
-    background-position: top center;
     display: grid;
     grid-template-rows: min-content 1fr min-content;
     min-height: 100%;
@@ -788,6 +785,27 @@ a {
 
 
 /* Header -- Slider */
+
+.site-wrapper-1 {
+    background-color: var(--special-green);
+    background-image: url(../img/bg-image-1.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.site-wrapper-2 {
+    background-color: var(--special-gray);
+    background-image: url(../img/bg-image-2.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.site-wrapper-3 {
+    background-color: var(--special-brown-dark);
+    background-image: url(../img/bg-image-3.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
 
 .header-slider {
     position: relative;
