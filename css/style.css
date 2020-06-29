@@ -1624,6 +1624,7 @@ input::-webkit-inner-spin-button {
     min-width: 220px;
     border-radius: 16px;
     background-image: url(../img/bg-post.png);
+    background-color: var(--special-pink-dark);
 }
 
 .subscribe-inner {
@@ -1703,7 +1704,6 @@ input::-webkit-inner-spin-button {
 
 .map-link {
     display: block;
-    background-color: var(--special-brown-light);
     width: 1200px;
     height: 430px;
 }

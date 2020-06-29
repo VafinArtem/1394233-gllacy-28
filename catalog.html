@@ -144,6 +144,7 @@
       <form action="https://echo.htmlacademy.ru/" method="GET" class="filter-form">
         <fieldset class="catalog-filter-box">
           <legend class="catalog-filter-title">Сортировка:</legend>
+          <label for="catalog-sorting" class="visually-hidden">Cортировка</label>
           <select class="catalog-sorting" name="catalog-sorting" id="catalog-sorting">
               <option class="select-item" value="popular">по популярности</option>
               <option class="select-item" value="low-cost-up">сначала недорогие</option>
@@ -183,7 +184,7 @@
             </li>
             <li class="catalog-fat-item">
               <label class="check">
-                <input class="radio-input" type="radio" name="fat" value="up-10"> 
+                <input class="radio-input" type="radio" name="fat" value="up-10" checked> 
                 <span class="radio-box"></span>
                 до 10%
               </label>
@@ -209,14 +210,14 @@
           <ul class="catalog-fillers-list">
             <li class="catalog-fillers-item">
               <label class="check">
-                <input class="check-input" type="checkbox" name="chocolate">
+                <input class="check-input" type="checkbox" name="chocolate" checked>
                 <span class="check-box"></span>
                 шоколадные
               </label>
             </li>
             <li class="catalog-fillers-item">
               <label class="check">
-                <input class="check-input" type="checkbox" name="sugar">
+                <input class="check-input" type="checkbox" name="sugar" checked>
                 <span class="check-box"></span>
                 сахарные присыпки
               </label>
