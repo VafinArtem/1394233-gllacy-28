@@ -5,12 +5,11 @@
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
+  <link href="css/normalize.min.css" rel="stylesheet">
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 
 <body class="site-wrapper site-wrapper-2">
-  <!-- <div class="site-wrapper site-wrapper-2"> -->
   <header class="header container">
     <div class="header-wrapper">
       <section class="header-nav">
@@ -206,7 +205,11 @@
     </div>
     <section class="find-us container">
       <h2 class="visually-hidden">Как нас найти</h2>
-      <div class="map" id="map" aria-label="Карта где мы находимся по адресу ул. Большая Конюшенная, 19/8, Санкт-Петербург"></div>
+      <div class="map" id="map">
+        <a href="https://yandex.ru/maps/-/CCQhVBXX2A" class="map-link" title="Карта где мы находимся по адресу ул. Большая Конюшенная, 19/8, Санкт-Петербург">
+          <img src="img/map.png" width="1200" height="430" alt="Карта где мы находимся по адресу ул. Большая Конюшенная, 19/8, Санкт-Петербург">
+        </a>
+      </div>
       <div class="address">
         <p class="address-text">Адрес главного офиса<br>и офлайн-магазина:<br><span class="address-desc">ул. Большая Конюшенная, 19/8, Санкт-Петербург</span></p>
         <p class="address-text">Для заказов по телефону:<br><a class="adress-text-link" href="tel:88124502525">8 812 450-25-25</a><br>(с 10 до 20 ежедневно)</p>
@@ -270,9 +273,8 @@
       </form>
     </section>
   </div>
-  <!-- </div> -->
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=e4063060-41f4-4dfd-941f-95a7a87d136d" type="text/javascript"></script>
-  <script src="js/script.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

@@ -1697,11 +1697,16 @@ input::-webkit-inner-spin-button {
 }
 
 
-/* Main -- Map */
+/* Main -- Find Us */
 
 .map {
+    position: relative;
     width: 1200px;
     height: 430px;
+}
+
+.map-link {
+    position: absolute;
 }
 
 .find-us {
