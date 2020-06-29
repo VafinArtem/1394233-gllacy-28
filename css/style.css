@@ -749,7 +749,7 @@ a {
 }
 
 .breadcrumbs-link:hover,
-.breadcrumbs-link:focus {
+.breadcrumbs-link:not(.current-link):focus {
     color: var(--special-pink-light);
     border-bottom: 1px solid var(--special-brown-mid-opacity);
 }
