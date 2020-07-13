@@ -15,9 +15,7 @@ for (let i = 0; i < sliderButtons.length; i++) {
         for (let n = 1; n <= sliderButtons.length; n++) {
             if (siteWrapper.classList.contains("site-wrapper-" + n)) {
                 siteWrapper.classList.remove("site-wrapper-" + n);
-
             };
-
             siteWrapper.classList.add("site-wrapper-" + (i + 1));
         };
     });
